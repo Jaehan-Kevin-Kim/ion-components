@@ -19,17 +19,15 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  appPages =
+  public appPages =
     [{
       title: 'Home',
       url: '/home',
-      md: 'home',
-      ios: 'home-outline'
+      icon: 'home-outline'
     }, {
       title: 'Accordion List',
       url: '/accordion-list',
-      md: 'people',
-      ios: 'people-outline'
+      icon: 'chevron-down-outline'
     }
 
     ];
