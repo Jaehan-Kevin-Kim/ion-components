@@ -1,0 +1,42 @@
+// 아래 두개는 각각 label, items들의 큰 덩어리 styling
+
+ion-accordion::part(content) {
+  padding: 10px;
+  background: #ff00ff;
+}
+
+ion-accordion::part(header) {
+  padding: 10px;
+  background: red;
+  border: 1px dashed;
+}
+
+// 아래는 expanding 되는 도중의 styling
+ion-accordion.accordion-expanding ion-item [slot="header"] {
+  --background: var(--ion-color-secondary);
+  --color: #fff;
+}
+
+// 아래는 expanded 된 후의 styling
+ion-accordion.accordion-expanded ion-item [slot="header"] {
+  --background: yellow;
+  --color: red;
+}
+
+// 만약 두개를 같게 하고싶으면
+// 두개의 styling 이름을 , 로 합쳐주면 됨
+
+// 아래는 expanding 되는 도중의 styling
+ion-accordion.accordion-expanding [slot="content"] {
+  --ion-item-background: #0c0254;
+  --ion-item-color: #fff;
+}
+
+// 아래는 expanded 된 후의 styling
+ion-accordion.accordion-expanded [slot="content"] {
+  --ion-item-background: yellow;
+  --ion-item-color: red;
+}
+
+// 만약 두개를 같게 하고싶으면
+// 두개의 styling 이름을 , 로 합쳐주면 됨

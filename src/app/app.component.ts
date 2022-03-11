@@ -20,15 +20,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages =
-    [{
-      title: 'Home',
-      url: '/home',
-      icon: 'home-outline'
-    }, {
-      title: 'Accordion List',
-      url: '/accordion-list',
-      icon: 'chevron-down-outline'
-    }
+    [
+      {
+        title: 'Home',
+        url: '/home',
+        icon: 'home-outline'
+      },
+      {
+        title: 'Accordion List',
+        url: '/pages/accordion-list',
+        icon: 'chevron-down-outline'
+      },
+      {
+        title: 'Buttons',
+        url: '/pages/buttons',
+        icon: 'checkbox-outline'
+      }
 
     ];
 

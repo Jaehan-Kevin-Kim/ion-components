@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Accordion List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text color="secondary">
+    <h1>Accordion List Examples</h1>
+  </ion-text>
+  <app-accordion-list *ngFor="let item of accordionItems;" [name]="item.name" [description]="item.description"
+    [image]="item.imageUrl">
+
+  </app-accordion-list>
+
+</ion-content>

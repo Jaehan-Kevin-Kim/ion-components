@@ -11,9 +11,13 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
+  // {
+  //   path: 'accordion-list',
+  //   loadChildren: () => import('./pages/page-accordion-list/page-accordion-list.module').then(m => m.PageAccordionListModule)
+  // },
   {
-    path: 'accordion-list',
-    loadChildren: () => import('./menu/accordion-list/accordion-list.module').then(m => m.AccordionListModule)
+    path: 'pages',
+    loadChildren: () => import('./pages/pages-routing.module').then(m => m.PagesRoutingModule)
   },
 
 ];
